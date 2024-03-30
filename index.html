@@ -20,7 +20,7 @@
     <header class="header">
       <div class="container">
         <a class="header-logo">
-          <img src="./images/logo.png" alt="logo"  class="header-logo-img"/>
+          <img src="./images/logo.png" alt="logo" class="header-logo-img" />
         </a>
         <nav class="navigation">
           <ul class="nav-list">
@@ -50,16 +50,20 @@
             <p class="hero-text">
               <br />Oe perlltxe hu tsamsiyu! <br />Ngari hu Eywa salew tirea,
               <br />
-              tokx 'ì'awn slu Na'viyä hapxì. <br>Säwem nìayoeng!
+              tokx 'ì'awn slu Na'viyä hapxì. <br />Säwem nìayoeng!
             </p>
             <div class="hero-arrow"></div>
             <p class="hero-text">
               Хоробрий воїне, звертаюсь до тебе! <br />
-              Твій дух йде з Ейвою,<br> твоє тіло залишається, <br />
-              щоб стати частиною Народу .<br> Борись разом з нами!
+              Твій дух йде з Ейвою,<br />
+              твоє тіло залишається, <br />
+              щоб стати частиною Народу .<br />
+              Борись разом з нами!
             </p>
 
-            <button type="button" class="hero-btn-join">Приєднатися до клану</button>
+            <button type="button" class="hero-btn-join" data-open-form-modal>
+              Приєднатися до клану
+            </button>
           </div>
 
           <ul class="social_networks-list">
@@ -119,7 +123,8 @@
       <section class="quotes">
         <div class="container">
           <blockquote class="quotes-text">
-            “ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ <br>ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”
+            “ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ <br />ЇЇ ДОВЕДЕТЬСЯ
+            ПОВЕРНУТИ.”
 
             <cite class="quotes-autor">Джейк Саллі</cite>
           </blockquote>
@@ -195,5 +200,43 @@
         </div>
       </div>
     </footer>
+
+    <button type="button" class="hero-btn-join" data-open-form-modal>
+      Приєднатися до клану
+    </button>
+    <div class="backdrop is-hidden" data-form-backdrop>
+      <form class="modal">
+        <button class="modal-close" data-close-form-modal type="button">
+          <svg width="14" height="14" class="modal-form_close">
+            <use href="./symbol-defs.svg#icon-close-tab"></use>
+          </svg>
+        </button>
+        
+        <ul class="modal-list">
+          <li class="modal-list_item">
+            <label for="modal-name" class="modal-list_label">Ім’я</label>
+            <input
+              type="text"
+              required
+              id="modal-name"
+              class="modal-list_input"
+            />
+          </li>
+          <li class="modal-list_item">
+            <label for="modal-email" class="modal-list_label">Email</label>
+            <input
+              type="text"
+              required
+              id="modal-email"
+              class="modal-list_input"
+            />
+          </li>
+        </ul>
+        <button type="button" class="modal-clan_btn">
+          Приєднатися до клану
+        </button>
+      </form>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
