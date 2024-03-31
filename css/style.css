@@ -407,14 +407,14 @@ background-image: url("../images/vector9.png");
 .modal-list_item:nth-child(1) .modal-list_input {
   margin-bottom: 10px;
 }
-.modal-list_input {
-  width:440px;
-  display: block;
-}
 .modal-list_label {
   font-weight: 400;
   font-size: 24px;
   color: var(--back-color);
+}
+.modal-list_input {
+  width: 440px;
+  display: block;
 }
 .modal-clan_btn {
   margin: 0 auto;
@@ -423,5 +423,8 @@ background-image: url("../images/vector9.png");
   width: 260px;
   height: 80px;
   background: #0b0e66;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
   color: #26c7ea;
 }
