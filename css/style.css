@@ -428,3 +428,34 @@ background-image: url("../images/vector9.png");
   text-align: center;
   color: #26c7ea;
 }
+
+.modal-info {
+  background-image: url('../images/sec-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--back-color);
+  
+  width: 600px;
+  height: 404px;
+  position: relative;
+}
+.modal-info_close {
+  fill: var(--white);
+}
+.modal-info_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal-info_welcome, .modal-info_info {
+  color: var(--white);
+}
+.modal-info_welcome {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.modal-info_info {
+  text-align: center;
+}
